@@ -1,0 +1,1058 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehdi Dhraief | Transmission Vivante - 33 ans d'expertise en Anesthésie-Réanimation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        medical: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        sage: {
+                            50: '#f6f7f4',
+                            100: '#e8ebe3',
+                            200: '#d4d9ca',
+                            300: '#b8c2a8',
+                            400: '#9ba888',
+                            500: '#7e8d6b',
+                            600: '#637054',
+                            700: '#4f5944',
+                            800: '#414a39',
+                            900: '#363d31',
+                        },
+                        terracotta: {
+                            500: '#c67b5c',
+                            600: '#b56a4b',
+                        },
+                        linkedin: {
+                            500: '#0077b5',
+                            600: '#006396',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #0c4a6e 0%, #0284c7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(12, 74, 110, 0.15) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, #0284c7, #7dd3fc);
+            z-index: 0;
+        }
+        @media (max-width: 768px) {
+            .timeline-line {
+                left: 20px;
+            }
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .skill-tag {
+            transition: all 0.3s ease;
+        }
+        .skill-tag:hover {
+            transform: scale(1.05);
+            background-color: #0284c7;
+            color: white;
+        }
+        .contact-btn {
+            transition: all 0.3s ease;
+        }
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .whatsapp-btn {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+        }
+        .whatsapp-btn:hover {
+            background: linear-gradient(135deg, #128c7e 0%, #075e54 100%);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        .quote-icon {
+            opacity: 0.1;
+            font-size: 6rem;
+            line-height: 1;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-family: serif;
+        }
+        .star-rating {
+            color: #fbbf24;
+        }
+    </style>
+<base target="_blank">
+</head>
+<body class="font-sans text-gray-800 bg-sage-50 smooth-scroll">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-medical-700 rounded-full flex items-center justify-center shadow-lg">
+                        <span class="text-white font-serif text-xl font-bold">MD</span>
+                    </div>
+                    <div>
+                        <span class="font-serif text-xl font-semibold text-medical-900 block leading-none">Mehdi Dhraief</span>
+                        <span class="text-xs text-medical-600 font-medium">Transmission Vivante</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#parcours" class="text-gray-700 hover:text-medical-700 font-medium transition">Mon Parcours</a>
+                    <a href="#expertise" class="text-gray-700 hover:text-medical-700 font-medium transition">Expertise</a>
+                    <a href="#temoignages" class="text-gray-700 hover:text-medical-700 font-medium transition">Témoignages</a>
+                    <a href="#transmission" class="text-gray-700 hover:text-medical-700 font-medium transition">Transmission</a>
+                    <a href="#contact" class="bg-medical-700 text-white px-6 py-2 rounded-full hover:bg-medical-800 transition shadow-md">Contact</a>
+                    <a href="https://www.linkedin.com/in/mehdidhraief" target="_blank" rel="noopener noreferrer" class="text-linkedin-500 hover:text-linkedin-600 transition" title="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                </div>
+                <button class="md:hidden text-gray-700" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#parcours" class="block px-3 py-2 text-gray-700 hover:bg-medical-50 rounded">Mon Parcours</a>
+                <a href="#expertise" class="block px-3 py-2 text-gray-700 hover:bg-medical-50 rounded">Expertise</a>
+                <a href="#temoignages" class="block px-3 py-2 text-gray-700 hover:bg-medical-50 rounded">Témoignages</a>
+                <a href="#transmission" class="block px-3 py-2 text-gray-700 hover:bg-medical-50 rounded">Transmission</a>
+                <a href="#contact" class="block px-3 py-2 text-medical-700 font-semibold">Contact</a>
+                <a href="https://www.linkedin.com/in/mehdidhraief" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 text-linkedin-600 font-semibold flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 hero-pattern overflow-hidden bg-gradient-to-br from-medical-50 to-sage-50">
+        <div class="absolute inset-0 bg-gradient-to-br from-medical-100/30 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <div class="inline-flex items-center px-4 py-2 bg-medical-100 text-medical-800 rounded-full text-sm font-semibold mb-6">
+                        <i data-lucide="stethoscope" class="w-4 h-4 mr-2"></i>
+                        Technicien Supérieur en Anesthésie-Réanimation
+                    </div>
+                    <h1 class="font-serif text-5xl lg:text-6xl font-bold text-medical-900 leading-tight mb-6">
+                        33 ans aux <span class="italic text-terracotta-600">cœur</span> des soins critiques
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed max-w-lg">
+                        De la salle d'opération à la direction des soins, une vie consacrée à l'excellence technique et humaine. Aujourd'hui, je transmets ce que l'expérience seule peut enseigner.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <a href="tel:+216 21774417" class="contact-btn inline-flex items-center px-4 py-2 bg-white border border-gray-200 rounded-full text-gray-700 hover:border-medical-500 hover:text-medical-700 transition shadow-sm">
+                            <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
+                            21 77 44 17
+                        </a>
+                        <a href="https://wa.me/21621774417" target="_blank" rel="noopener noreferrer" class="contact-btn inline-flex items-center px-4 py-2 text-white rounded-full whatsapp-btn shadow-sm">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            WhatsApp
+                        </a>
+                        <a href="https://www.linkedin.com/in/mehdidhraief" target="_blank" rel="noopener noreferrer" class="contact-btn inline-flex items-center px-4 py-2 bg-linkedin-500 text-white rounded-full hover:bg-linkedin-600 transition shadow-sm">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#parcours" class="bg-medical-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-medical-800 transition shadow-lg hover:shadow-xl text-center flex items-center justify-center">
+                            <i data-lucide="scroll-text" class="w-5 h-5 mr-2"></i>
+                            Découvrir mon parcours
+                        </a>
+                        <a href="#contact" class="border-2 border-medical-700 text-medical-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-medical-50 transition text-center">
+                            Échanger avec moi
+                        </a>
+                    </div>
+                    
+                    <div class="mt-12 grid grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-medical-900">1992</p>
+                            <p class="text-sm text-gray-600">Début de carrière</p>
+                        </div>
+                        <div class="text-center border-x border-gray-300">
+                            <p class="text-3xl font-bold text-medical-900">33</p>
+                            <p class="text-sm text-gray-600">Années d'expérience</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-medical-900">3</p>
+                            <p class="text-sm text-gray-600">Cliniques majeures</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-medical-300 rounded-full opacity-20 blur-3xl"></div>
+                    <div class="relative bg-white rounded-3xl shadow-2xl overflow-hidden">
+                        <div class="bg-medical-700 p-6 text-white">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-medical-100 text-sm uppercase tracking-wider">Profil Professionnel</p>
+                                    <h3 class="font-serif text-2xl font-bold">Mehdi Dhraief</h3>
+                                </div>
+                                <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                                    <i data-lucide="user" class="w-8 h-8"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8 space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-medical-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i data-lucide="activity" class="w-5 h-5 text-medical-700"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Spécialité</p>
+                                    <p class="text-gray-600">Anesthésie-Réanimation, Soins critiques</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-medical-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i data-lucide="hospital" class="w-5 h-5 text-medical-700"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Fonction actuelle</p>
+                                    <p class="text-gray-600">Responsable des Soins & Formateur Interne<br><span class="text-sm text-medical-600">Clinique de l'Espoir</span></p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-medical-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i data-lucide="map-pin" class="w-5 h-5 text-medical-700"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Localisation</p>
+                                    <p class="text-gray-600">Tunis, Tunisie</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-4 border-t border-gray-100 space-y-2">
+                                <a href="tel:+21621774417" class="flex items-center text-medical-700 hover:text-medical-900 transition">
+                                    <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
+                                    <span class="text-sm font-medium">21 77 44 17</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/mehdidhraief" target="_blank" rel="noopener noreferrer" class="flex items-center text-linkedin-500 hover:text-linkedin-600 transition">
+                                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                    <span class="text-sm font-medium">linkedin.com/in/mehdidhraief</span>
+                                </a>
+                            </div>
+                            
+                            <div class="pt-2">
+                                <p class="text-sm text-gray-500 italic">"L'excellence technique ne vaut que par l'humanité qui l'accompagne."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parcours Timeline Section -->
+    <section id="parcours" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-serif text-4xl font-bold text-medical-900 mb-6">Mon parcours de vie</h2>
+                <p class="text-xl text-gray-600">De technicien d'anesthésie à responsable des soins, une ascension fondée sur l'expertise technique et le leadership humain.</p>
+            </div>
+
+            <div class="relative">
+                <div class="timeline-line"></div>
+                
+                <!-- 1992 -->
+                <div class="relative mb-12 md:mb-0 md:h-48">
+                    <div class="md:flex items-center justify-between">
+                        <div class="md:w-5/12 md:text-right md:pr-8 mb-4 md:mb-0">
+                            <div class="bg-medical-50 p-6 rounded-2xl border border-medical-100 card-hover">
+                                <span class="inline-block px-3 py-1 bg-medical-200 text-medical-800 rounded-full text-sm font-bold mb-2">1992</span>
+                                <h3 class="font-serif text-xl font-bold text-medical-900 mb-2">Début de carrière</h3>
+                                <p class="text-gray-600 text-sm">Hôpital FSI de La Marsa</p>
+                                <p class="text-gray-500 text-sm mt-2">Technicien d'anesthésie au bloc opératoire</p>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-medical-500 rounded-full border-4 border-white shadow-lg z-10 hidden md:block"></div>
+                        <div class="md:w-5/12 md:pl-8">
+                            <div class="flex items-start space-x-2 text-medical-600">
+                                <i data-lucide="plus-circle" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                                <p class="text-sm">Épaulage équipe des urgences et transport médicalisé — premiers pas dans la polyvalence critique</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1999-2014 Clinique Générale et Cardiovasculaire -->
+                <div class="relative mb-12 md:mb-0 md:h-56">
+                    <div class="md:flex items-center justify-between">
+                        <div class="md:w-5/12 md:text-right md:pr-8 order-2 md:order-1">
+                            <div class="flex items-start space-x-2 text-medical-600 justify-end">
+                                <p class="text-sm text-right">15 années de consolidation dans le secteur privé. Maîtrise des techniques d'anesthésie cardiovasculaire de haute précision et gestion des situations critiques en chirurgie lourde.</p>
+                                <i data-lucide="heart-pulse" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-medical-600 rounded-full border-4 border-white shadow-lg z-10 hidden md:block"></div>
+                        <div class="md:w-5/12 md:pl-8 order-1 md:order-2 mb-4 md:mb-0">
+                            <div class="bg-sage-50 p-6 rounded-2xl border border-sage-100 card-hover relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-20 h-20 bg-medical-100 rounded-full -mr-10 -mt-10 opacity-50"></div>
+                                <span class="inline-block px-3 py-1 bg-sage-200 text-sage-800 rounded-full text-sm font-bold mb-2 relative z-10">1999 — 2014</span>
+                                <h3 class="font-serif text-xl font-bold text-medical-900 mb-2 relative z-10">Clinique Générale et Cardiovasculaire de Tunis</h3>
+                                <p class="text-gray-600 text-sm relative z-10">Technicien d'anesthésie — Secteur privé</p>
+                                <p class="text-gray-500 text-sm mt-2 relative z-10">Spécialisation chirurgie cardiaque, vasculaire et thoracique</p>
+                                <div class="mt-3 flex gap-2 relative z-10">
+                                    <span class="px-2 py-1 bg-white/80 text-medical-700 text-xs rounded border border-medical-200">15 ans</span>
+                                    <span class="px-2 py-1 bg-white/80 text-medical-700 text-xs rounded border border-medical-200">Chirurgie cardiaque</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2014 Clinique Pasteur -->
+                <div class="relative mb-12 md:mb-0 md:h-48">
+                    <div class="md:flex items-center justify-between">
+                        <div class="md:w-5/12 md:text-right md:pr-8 mb-4 md:mb-0">
+                            <div class="bg-terracotta-50 p-6 rounded-2xl border border-terracotta-100 card-hover">
+                                <span class="inline-block px-3 py-1 bg-terracotta-200 text-terracotta-800 rounded-full text-sm font-bold mb-2">2014</span>
+                                <h3 class="font-serif text-xl font-bold text-medical-900 mb-2">Passage à la direction</h3>
+                                <p class="text-gray-600 text-sm">Clinique Pasteur</p>
+                                <p class="text-gray-500 text-sm mt-2">Surveillant Général des Soins</p>
+                                <span class="inline-block mt-2 px-2 py-1 bg-medical-100 text-medical-700 text-xs rounded">10 années</span>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-terracotta-500 rounded-full border-4 border-white shadow-lg z-10 hidden md:block"></div>
+                        <div class="md:w-5/12 md:pl-8">
+                            <div class="space-y-2">
+                                <div class="flex items-center text-medical-700">
+                                    <i data-lucide="users" class="w-4 h-4 mr-2"></i>
+                                    <span class="text-sm">Management pluridisciplinaire</span>
+                                </div>
+                                <div class="flex items-center text-medical-700">
+                                    <i data-lucide="clipboard-list" class="w-4 h-4 mr-2"></i>
+                                    <span class="text-sm">Coordination des équipes de soins</span>
+                                </div>
+                                <div class="flex items-center text-medical-700">
+                                    <i data-lucide="shield-check" class="w-4 h-4 mr-2"></i>
+                                    <span class="text-sm">Garant de la qualité et sécurité</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aujourd'hui -->
+                <div class="relative">
+                    <div class="md:flex items-center justify-between">
+                        <div class="md:w-5/12 md:text-right md:pr-8 order-2 md:order-1">
+                            <div class="flex items-start space-x-2 text-medical-600 justify-end">
+                                <p class="text-sm text-right">À la veille de la retraite, je consacre mon énergie à transmettre ce savoir-faire irréductible à la théorie.</p>
+                                <i data-lucide="graduation-cap" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-medical-700 rounded-full border-4 border-white shadow-xl z-10 hidden md:block animate-pulse"></div>
+                        <div class="md:w-5/12 md:pl-8 order-1 md:order-2 mb-4 md:mb-0">
+                            <div class="bg-medical-700 p-6 rounded-2xl text-white shadow-xl card-hover">
+                                <span class="inline-block px-3 py-1 bg-white/20 text-white rounded-full text-sm font-bold mb-2">Aujourd'hui</span>
+                                <h3 class="font-serif text-xl font-bold mb-2">Clinique de l'Espoir</h3>
+                                <p class="text-medical-100 text-sm">Responsable des Soins & Formateur Interne</p>
+                                <div class="mt-4 pt-4 border-t border-white/20">
+                                    <p class="text-sm text-medical-100 italic">"Former la relève est devenu ma mission principale"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-24 bg-medical-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-serif text-4xl font-bold text-medical-900 mb-6">Domaines d'expertise</h2>
+                <p class="text-xl text-gray-600">Une compétence technique affûtée par trois décennies de pratique intensive et de gestion de crise.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover border-t-4 border-medical-500">
+                    <div class="w-14 h-14 bg-medical-100 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="syringe" class="w-7 h-7 text-medical-700"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-medical-900 mb-3">Anesthésie Générale & Locorégionale</h3>
+                    <p class="text-gray-600 mb-4">Maîtrise des techniques d'anesthésie pour chirurgie générale, cardiovasculaire et orthopédique.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">Intubation</span>
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">Rachianesthésie</span>
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">Sédation</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover border-t-4 border-medical-500">
+                    <div class="w-14 h-14 bg-medical-100 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="heart-pulse" class="w-7 h-7 text-medical-700"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-medical-900 mb-3">Réanimation & Soins Intensifs</h3>
+                    <p class="text-gray-600 mb-4">Gestion des états de choc, ventilation mécanique, monitorage invasif et hémodynamique avancé.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">Ventilation</span>
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">Choc cardiogénique</span>
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">Monitorage</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover border-t-4 border-medical-500">
+                    <div class="w-14 h-14 bg-medical-100 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="truck" class="w-7 h-7 text-medical-700"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-medical-900 mb-3">Transport Médicalisé</h3>
+                    <p class="text-gray-600 mb-4">Stabilisation et transfert de patients en situation critique. Gestion des ressources limitées en mouvement.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">SAMU</span>
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">SMUR</span>
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">Stabilisation</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover border-t-4 border-terracotta-500">
+                    <div class="w-14 h-14 bg-terracotta-100 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="users" class="w-7 h-7 text-terracotta-600"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-medical-900 mb-3">Management des Soins</h3>
+                    <p class="text-gray-600 mb-4">Direction d'équipes pluriprofessionnelles, gestion des conflits, optimisation des protocoles.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">Leadership</span>
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">Protocoles</span>
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">Qualité</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover border-t-4 border-terracotta-500">
+                    <div class="w-14 h-14 bg-terracotta-100 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="alert-triangle" class="w-7 h-7 text-terracotta-600"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-medical-900 mb-3">Urgences & Crises</h3>
+                    <p class="text-gray-600 mb-4">Réactivité en situation d'urgence vitale, arrêt cardio-respiratoire, gestion du stress d'équipe.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">ACR</span>
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">ALS</span>
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">Crisis management</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover border-t-4 border-terracotta-500">
+                    <div class="w-14 h-14 bg-terracotta-100 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="book-open" class="w-7 h-7 text-terracotta-600"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-medical-900 mb-3">Formation Professionnelle</h3>
+                    <p class="text-gray-600 mb-4">Pédagogie des soins, transmission des gestes techniques, mentorat personnalisé des nouveaux recrues.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">Pédagogie</span>
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">Tutorat</span>
+                        <span class="skill-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs cursor-pointer">Évaluation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages Section -->
+    <section id="temoignages" class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-medical-50/50 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-serif text-4xl font-bold text-medical-900 mb-6">Ils témoignent</h2>
+                <p class="text-xl text-gray-600">Des voix qui ont croisé mon parcours — apprentis, collègues, médecins et patients.</p>
+            </div>
+
+            <!-- Filtres -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="filterTestimonials('all')" class="testimonial-filter px-6 py-2 rounded-full bg-medical-700 text-white font-medium transition hover:shadow-lg" data-filter="all">Tous</button>
+                <button onclick="filterTestimonials('technicien')" class="testimonial-filter px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium transition hover:bg-gray-300" data-filter="technicien">Techniciens</button>
+                <button onclick="filterTestimonials('collegue')" class="testimonial-filter px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium transition hover:bg-gray-300" data-filter="collegue">Collègues</button>
+                <button onclick="filterTestimonials('medecin')" class="testimonial-filter px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium transition hover:bg-gray-300" data-filter="medecin">Médecins</button>
+                <button onclick="filterTestimonials('patient')" class="testimonial-filter px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium transition hover:bg-gray-300" data-filter="patient">Patients</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="testimonialsGrid">
+                
+                <!-- Témoignage Technicien 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden" data-category="technicien">
+                    <div class="quote-icon text-medical-200">"</div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <div class="flex star-rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic leading-relaxed">
+                            "J'ai débuté à la Clinique Pasteur sous sa supervision. Mehdi ne vous donne pas seulement les procédures, il vous apprend à lire la situation. Aujourd'hui, je suis moi-même référent technique, et je transmets ce qu'il m'a appris."
+                        </p>
+                        <div class="flex items-center pt-4 border-t border-gray-100">
+                            <div class="w-12 h-12 bg-medical-100 rounded-full flex items-center justify-center text-medical-700 font-bold mr-4">
+                                AS
+                            </div>
+                            <div>
+                                <p class="font-semibold text-medical-900">Amine S.</p>
+                                <p class="text-sm text-gray-500">Technicien d'anesthésie — Ancien apprenti</p>
+                                <span class="inline-block mt-1 px-2 py-0.5 bg-medical-100 text-medical-700 text-xs rounded">Technicien</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage Médecin 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden" data-category="medecin">
+                    <div class="quote-icon text-terracotta-200">"</div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <div class="flex star-rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic leading-relaxed">
+                            "En 15 ans de collaboration à la Clinique Cardiovasculaire, je n'ai jamais vu Mehdi perdre son sang-froid. Même dans les chirurgies les plus lourdes, sa présence rassure l'équipe entière. C'est un pilier silencieux mais essentiel."
+                        </p>
+                        <div class="flex items-center pt-4 border-t border-gray-100">
+                            <div class="w-12 h-12 bg-terracotta-100 rounded-full flex items-center justify-center text-terracotta-700 font-bold mr-4">
+                                DB
+                            </div>
+                            <div>
+                                <p class="font-semibold text-medical-900">Dr. B.</p>
+                                <p class="text-sm text-gray-500">Chirurgien Cardiaque — Collaborateur de 1999 à 2014</p>
+                                <span class="inline-block mt-1 px-2 py-0.5 bg-terracotta-100 text-terracotta-700 text-xs rounded">Médecin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage Collègue 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden" data-category="collegue">
+                    <div class="quote-icon text-sage-200">"</div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <div class="flex star-rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic leading-relaxed">
+                            "Comme surveillant à la Clinique Pasteur, Mehdi était le médiateur naturel. Il savait désamorcer les tensions entre équipes avec une patience infinie. Son management se faisait par l'exemple, jamais par l'autorité brute."
+                        </p>
+                        <div class="flex items-center pt-4 border-t border-gray-100">
+                            <div class="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center text-sage-700 font-bold mr-4">
+                                NK
+                            </div>
+                            <div>
+                                <p class="font-semibold text-medical-900">Nadia K.</p>
+                                <p class="text-sm text-gray-500">Infirmière en Chef — Collègue à la Clinique Pasteur</p>
+                                <span class="inline-block mt-1 px-2 py-0.5 bg-sage-100 text-sage-700 text-xs rounded">Collègue</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage Patient 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden" data-category="patient">
+                    <div class="quote-icon text-gold-200">"</div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <div class="flex star-rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic leading-relaxed">
+                            "Avant mon opération à cœur ouvert, j'étais terrifié. M. Dhraief est venu me voir la veille et m'a expliqué l'anesthésie avec des mots simples. Ce geste humain m'a plus rassuré que tous les médicaments."
+                        </p>
+                        <div class="flex items-center pt-4 border-t border-gray-100">
+                            <div class="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center text-gold-700 font-bold mr-4">
+                                FM
+                            </div>
+                            <div>
+                                <p class="font-semibold text-medical-900">Fatima M.</p>
+                                <p class="text-sm text-gray-500">Patient opérée en 2008 — Clinique Cardiovasculaire</p>
+                                <span class="inline-block mt-1 px-2 py-0.5 bg-gold-100 text-gold-700 text-xs rounded">Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage Technicien 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden" data-category="technicien">
+                    <div class="quote-icon text-medical-200">"</div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <div class="flex star-rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic leading-relaxed">
+                            "Le 'carnet de bord' que Mehdi m'a fait tenir est devenu mon trésor. Ses annotations dans les marges, ses 'attention à ça' soulignés — c'est une pédagogie qui respecte l'intelligence de l'apprenti."
+                        </p>
+                        <div class="flex items-center pt-4 border-t border-gray-100">
+                            <div class="w-12 h-12 bg-medical-100 rounded-full flex items-center justify-center text-medical-700 font-bold mr-4">
+                                YB
+                            </div>
+                            <div>
+                                <p class="font-semibold text-medical-900">Youssef B.</p>
+                                <p class="text-sm text-gray-500">Technicien de bloc — Actuel apprenti</p>
+                                <span class="inline-block mt-1 px-2 py-0.5 bg-medical-100 text-medical-700 text-xs rounded">Technicien</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage Médecin 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden" data-category="medecin">
+                    <div class="quote-icon text-terracotta-200">"</div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <div class="flex star-rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic leading-relaxed">
+                            "À la Clinique de l'Espoir, Mehdi forme nos jeunes recrues avec une méthode qui m'épate. Il ne leur donne pas le poisson, il leur apprend à pêcher. C'est exactement ce dont notre profession a besoin."
+                        </p>
+                        <div class="flex items-center pt-4 border-t border-gray-100">
+                            <div class="w-12 h-12 bg-terracotta-100 rounded-full flex items-center justify-center text-terracotta-700 font-bold mr-4">
+                                DR
+                            </div>
+                            <div>
+                                <p class="font-semibold text-medical-900">Dr. R.</p>
+                                <p class="text-sm text-gray-500">Anesthésiste-Réanimateur — Directeur médical actuel</p>
+                                <span class="inline-block mt-1 px-2 py-0.5 bg-terracotta-100 text-terracotta-700 text-xs rounded">Médecin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage Collègue 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden" data-category="collegue">
+                    <div class="quote-icon text-sage-200">"</div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <div class="flex star-rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic leading-relaxed">
+                            "Aux urgences de La Marsa dans les années 90, Mehdi était déjà celui qu'on appelait quand ça allait mal. Son calme était contagieux. Il m'a appris que la technique sans sang-froid ne vaut rien."
+                        </p>
+                        <div class="flex items-center pt-4 border-t border-gray-100">
+                            <div class="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center text-sage-700 font-bold mr-4">
+                                LT
+                            </div>
+                            <div>
+                                <p class="font-semibold text-medical-900">Leila T.</p>
+                                <p class="text-sm text-gray-500">Infirmière d'urgence — Collègue à l'Hôpital FSI</p>
+                                <span class="inline-block mt-1 px-2 py-0.5 bg-sage-100 text-sage-700 text-xs rounded">Collègue</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage Patient 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden" data-category="patient">
+                    <div class="quote-icon text-gold-200">"</div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <div class="flex star-rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic leading-relaxed">
+                            "Mon père était très anxieux avant son pontage. M. Dhraief a pris le temps de lui tenir la main et de lui parler jusqu'à ce qu'il s'endorme. Ce geste, ma famille ne l'oubliera jamais."
+                        </p>
+                        <div class="flex items-center pt-4 border-t border-gray-100">
+                            <div class="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center text-gold-700 font-bold mr-4">
+                                HS
+                            </div>
+                            <div>
+                                <p class="font-semibold text-medical-900">Hichem S.</p>
+                                <p class="text-sm text-gray-500">Fils de patient — 2012, Clinique Cardiovasculaire</p>
+                                <span class="inline-block mt-1 px-2 py-0.5 bg-gold-100 text-gold-700 text-xs rounded">Patient/Famille</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage Technicien 3 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden" data-category="technicien">
+                    <div class="quote-icon text-medical-200">"</div>
+                    <div class="relative z-10">
+                        <div class="flex items-center mb-4">
+                            <div class="flex star-rating">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6 italic leading-relaxed">
+                            "Ce que Mehdi m'a appris en 6 mois d'immersion, je ne l'aurais jamais appris en 2 ans de cours. L'intubation difficile, le monitorage invasif — il m'a fait toucher du doigt ce que les livres décrivent mal."
+                        </p>
+                        <div class="flex items-center pt-4 border-t border-gray-100">
+                            <div class="w-12 h-12 bg-medical-100 rounded-full flex items-center justify-center text-medical-700 font-bold mr-4">
+                                SB
+                            </div>
+                            <div>
+                                <p class="font-semibold text-medical-900">Sami B.</p>
+                                <p class="text-sm text-gray-500">Technicien de réanimation — Ancien apprenti 2019</p>
+                                <span class="inline-block mt-1 px-2 py-0.5 bg-medical-100 text-medical-700 text-xs rounded">Technicien</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="bg-medical-50 p-6 rounded-2xl">
+                    <p class="text-3xl font-bold text-medical-900">50+</p>
+                    <p class="text-sm text-gray-600">Techniciens formés</p>
+                </div>
+                <div class="bg-terracotta-50 p-6 rounded-2xl">
+                    <p class="text-3xl font-bold text-terracotta-600">15+</p>
+                    <p class="text-sm text-gray-600">Années de mentorat</p>
+                </div>
+                <div class="bg-sage-50 p-6 rounded-2xl">
+                    <p class="text-3xl font-bold text-sage-700">100%</p>
+                    <p class="text-sm text-gray-600">Taux de satisfaction</p>
+                </div>
+                <div class="bg-gold-50 p-6 rounded-2xl">
+                    <p class="text-3xl font-bold text-gold-600">33</p>
+                    <p class="text-sm text-gray-600">Années d'impact</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transmission Section -->
+    <section id="transmission" class="py-24 bg-sage-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-serif text-4xl font-bold text-medical-900 mb-6">Pourquoi je transmets</h2>
+                    <div class="space-y-6 text-gray-600 text-lg leading-relaxed">
+                        <p>
+                            À la veille de la retraite, je regarde derrière moi et je vois un métier qui a totalement changé — et pourtant qui reste identique dans son essence. Les machines sont plus sophistiquées, les protocoles plus standardisés, mais le patient reste un être humain vulnérable.
+                        </p>
+                        <p>
+                            J'ai vu des générations de soignants arriver avec enthousiasme mais sans repères. J'ai vu des "vieux loups" partir à la retraite avec leurs recettes dans la poche, emportant des décennies de savoir-faire.
+                        </p>
+                        <p class="font-semibold text-medical-800 bg-white p-6 rounded-xl border-l-4 border-medical-500 shadow-sm">
+                            "Je ne veux pas que mon savoir s'évapore. Je veux qu'il continue de servir, de sauver, de soulager — à travers les mains des nouvelles générations."
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8 grid grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-sage-100">
+                            <i data-lucide="handshake" class="w-8 h-8 text-sage-600 mb-3"></i>
+                            <p class="font-semibold text-sage-900">Transmission orale</p>
+                            <p class="text-sm text-gray-600">Pas de e-learning</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-sage-100">
+                            <i data-lucide="eye" class="w-8 h-8 text-sage-600 mb-3"></i>
+                            <p class="font-semibold text-sage-900">Immersion réelle</p>
+                            <p class="text-sm text-gray-600">Sur le terrain</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-sage-100">
+                            <i data-lucide="heart" class="w-8 h-8 text-sage-600 mb-3"></i>
+                            <p class="font-semibold text-sage-900">Gratuité totale</p>
+                            <p class="text-sm text-gray-600">Mon temps, mon investissement</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-sage-100">
+                            <i data-lucide="network" class="w-8 h-8 text-sage-600 mb-3"></i>
+                            <p class="font-semibold text-sage-900">Réseau vivant</p>
+                            <p class="text-sm text-gray-600">Communauté d'apprentis</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-medical-200 rounded-full opacity-30 blur-2xl"></div>
+                    <div class="relative bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                        <div class="bg-gradient-to-r from-medical-700 to-medical-600 p-8 text-white">
+                            <h3 class="font-serif text-2xl font-bold mb-4">Ce que je cherche à transmettre</h3>
+                            <p class="text-medical-100">Les compétences qui ne figurent dans aucun manuel mais qui font la différence entre un bon soignant et un excellent.</p>
+                        </div>
+                        <div class="p-8 space-y-4">
+                            <div class="flex items-start p-4 bg-gray-50 rounded-xl hover:bg-medical-50 transition">
+                                <div class="w-8 h-8 bg-medical-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                    <span class="text-medical-700 font-bold text-sm">1</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">L'anticipation clinique</p>
+                                    <p class="text-sm text-gray-600">Sentir venir le malaise avant que les chiffres ne l'indiquent</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start p-4 bg-gray-50 rounded-xl hover:bg-medical-50 transition">
+                                <div class="w-8 h-8 bg-medical-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                    <span class="text-medical-700 font-bold text-sm">2</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">La gestuelle économique</p>
+                                    <p class="text-sm text-gray-600">Faire plus avec moins, préserver son corps pour durer</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start p-4 bg-gray-50 rounded-xl hover:bg-medical-50 transition">
+                                <div class="w-8 h-8 bg-medical-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                    <span class="text-medical-700 font-bold text-sm">3</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">La communication de crise</p>
+                                    <p class="text-sm text-gray-600">Parler aux familles, gérer l'angoisse, traduire le médical</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start p-4 bg-gray-50 rounded-xl hover:bg-medical-50 transition">
+                                <div class="w-8 h-8 bg-medical-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                    <span class="text-medical-700 font-bold text-sm">4</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">La résilience professionnelle</p>
+                                    <p class="text-sm text-gray-600">Tenir 33 ans sans se consumer, garder son humanité</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-medical-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-medical-800 to-medical-900"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-medical-700 rounded-full opacity-20 -mr-48 -mt-48 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-terracotta-500 rounded-full opacity-10 -ml-48 -mb-48 blur-3xl"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-serif text-4xl font-bold mb-6">Prenons contact</h2>
+                <p class="text-xl text-medical-100">
+                    Disponible par téléphone, WhatsApp ou LinkedIn. Je vous réponds personnellement sous 24h.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-16">
+                <a href="tel:+21621774417" class="group bg-white/10 backdrop-blur rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition text-center">
+                    <div class="w-16 h-16 bg-medical-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <i data-lucide="phone" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2">Téléphone</h3>
+                    <p class="text-2xl font-bold text-medical-100 mb-2">21 77 44 17</p>
+                    <p class="text-sm text-medical-200">Appel direct</p>
+                </a>
+
+                <a href="https://wa.me/21621774417" target="_blank" rel="noopener noreferrer" class="group bg-white/10 backdrop-blur rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2">WhatsApp</h3>
+                    <p class="text-2xl font-bold text-medical-100 mb-2">21 77 44 17</p>
+                    <p class="text-sm text-medical-200">Message rapide</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/mehdidhraief" target="_blank" rel="noopener noreferrer" class="group bg-white/10 backdrop-blur rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition text-center">
+                    <div class="w-16 h-16 bg-linkedin-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2">LinkedIn</h3>
+                    <p class="text-lg font-bold text-medical-100 mb-2">/in/mehdidhraief</p>
+                    <p class="text-sm text-medical-200">Profil professionnel</p>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-12">
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-8 border border-white/10">
+                    <div class="w-12 h-12 bg-terracotta-500 rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="user-plus" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Vous êtes apprenti ?</h3>
+                    <p class="text-medical-100 mb-6 text-sm">Étudiant en soins, débutant en anesthésie-réanimation, ou soignant voulant monter en compétence.</p>
+                    <div class="flex gap-2">
+                        <a href="https://wa.me/21621774417" class="flex-1 bg-terracotta-500 text-white py-3 rounded-lg font-semibold hover:bg-terracotta-600 transition text-center text-sm">
+                            WhatsApp
+                        </a>
+                        <a href="tel:+21621774417" class="flex-1 bg-white/20 text-white py-3 rounded-lg font-semibold hover:bg-white/30 transition text-center text-sm">
+                            Appeler
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-8 border border-white/10">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="building-2" class="w-6 h-6 text-medical-900"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Vous êtes une structure ?</h3>
+                    <p class="text-medical-100 mb-6 text-sm">Clinique, hôpital, ESMS — accueillez ce projet de transmission interne.</p>
+                    <a href="https://www.linkedin.com/in/mehdidhraief" target="_blank" rel="noopener noreferrer" class="block w-full bg-linkedin-500 text-white py-3 rounded-lg font-semibold hover:bg-linkedin-600 transition text-center">
+                        Contacter sur LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 text-medical-200 text-sm border-t border-white/10 pt-8">
+                <div class="flex items-center">
+                    <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>
+                    <span>Tunis, Tunisie</span>
+                </div>
+                <div class="flex items-center">
+                    <i data-lucide="briefcase" class="w-4 h-4 mr-2"></i>
+                    <span>Clinique de l'Espoir</span>
+                </div>
+                <div class="flex items-center">
+                    <i data-lucide="award" class="w-4 h-4 mr-2"></i>
+                    <span>33 ans d'expérience</span>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center text-medical-300 text-xs">
+                <p>© 2026 Mehdi Dhraief — Transmission Vivante. Projet gratuit et bénévole.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="fixed bottom-6 right-6 md:hidden z-40">
+        <a href="https://wa.me/21621774417" class="whatsapp-btn w-14 h-14 rounded-full flex items-center justify-center shadow-2xl text-white">
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.add('bg-white/95');
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.classList.remove('bg-white/95');
+                navbar.classList.add('bg-white/90');
+            }
+        });
+
+        function filterTestimonials(category) {
+            const cards = document.querySelectorAll('.testimonial-card');
+            const buttons = document.querySelectorAll('.testimonial-filter');
+            
+            buttons.forEach(btn => {
+                if (btn.dataset.filter === category) {
+                    btn.classList.remove('bg-gray-200', 'text-gray-700');
+                    btn.classList.add('bg-medical-700', 'text-white');
+                } else {
+                    btn.classList.remove('bg-medical-700', 'text-white');
+                    btn.classList.add('bg-gray-200', 'text-gray-700');
+                }
+            });
+
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 50);
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    document.getElementById('mobileMenu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
